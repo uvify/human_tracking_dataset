@@ -14,7 +14,7 @@
 - [Test set](http://www.google.com)
 
 
-## Data Structure
+## Directory Structure
 
 <p align='center'>
     <img src="./config/doc/dir_structure.png" alt="drawing" width = "800"/>
@@ -31,16 +31,30 @@
 </p>
 
 
-### total : 18000 (500 clip)
-### train : 13500 (450 clip)
-### test  : 4500  (50 clip)
+#### total : 18000 (500 clip)
+#### data type-train : 13500 (450 clip)
+#### data type-test  : 4500  (50 clip)
 
-### film general : 18000
-### gen view : 14370 
-### top view : 3630
-### sunny : 10320
-### cloudy : 7680
-### space-general : 9000
-### space-green : 6900
-### space-play : 2100
+#### capture type-general : 18000
+#### capture type-production : 0
 
+#### camera degere-gen view : 14370 
+#### camera degree-top view : 3630
+#### weather-sunny : 10320
+#### weather-cloudy : 7680
+#### space-general : 9000
+#### space-green : 6900
+#### space-play : 2100
+
+
+
+## Example Data
+<p align='center'>
+    <img src="./config/doc/top_example.png" alt="drawing" width="800" />
+    
+</p>
+
+<p align='center'>
+    <img src="./config/doc/general_example.png" alt="drawing" width="800" />
+    
+</p>
