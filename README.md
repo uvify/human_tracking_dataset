@@ -75,7 +75,7 @@ key 'p' '<-'  : prev frame
 
 ### Data set 
 |     | Number of images | Description                              | 
-|:---:|:----------------:|:-----------------------------------------|
+|-----|------------------|------------------------------------------|
 |train| 13500            | Dataset used during the learning process |
 |test | 4500             | Dataset used only to assess performance  |
 |total| 18000            |                                          |
@@ -84,7 +84,7 @@ key 'p' '<-'  : prev frame
 
 ### Drone camera angle 
 |             | Number of images | Description                                                                            | 
-|:-----------|:----------------:|:----------------------------------------------------------------------------------------|
+|-------------|------------------|----------------------------------------------------------------------------------------|
 |general view | 13500            | Dataset taken when the angle of the drone camera to the ground is between 10~60 degrees|
 |top view     | 4500             | Dataset taken when the angle of the drone camera to the ground is around 90 degrees    |
 |total        | 18000            |                                                                                        |
@@ -92,14 +92,14 @@ key 'p' '<-'  : prev frame
 
 ### Weather
 |        | Number of images | Description                                 | 
-|:------:|:----------------:|:--------------------------------------------|
+|--------|------------------|---------------------------------------------|
 |sunny   | 10320            | Dataset taken on a sunny day                |
 |cloudy  | 7680             | Dataset taken on a rainy or cloudy day      |
 |total   | 18000            |                                             |
 
 ### Filming location
 |                | Number of images | Description                                                                         | 
-|:--------------|:----------------:|:-------------------------------------------------------------------------------------|
+|----------------|------------------|-------------------------------------------------------------------------------------|
 |general         | 10320            | Dataset taken from common roads such as side walk and asphalt                       |
 |green           | 7680             | Dataset taken in natural environments                                               |
 |play ground     | 18000            | Dataset taken from outdoor sports venues such as tennis courts and basketball courts|
@@ -118,7 +118,7 @@ key 'p' '<-'  : prev frame
 
 ### Human pose class
 |           | Number of objects| Description                                                                           | 
-|:----------|:----------------:|:--------------------------------------------------------------------------------------|
+|-----------|------------------|---------------------------------------------------------------------------------------|
 |general    | 134413           | Objects(people) with comman posture, such as walking or standing                      |
 |sitting    | 9535             | Objects(people) with sitting posutre                                                  |
 |waving hand| 500              | Object(people) waving hands                                                           |
@@ -127,7 +127,7 @@ key 'p' '<-'  : prev frame
 
 ### Occlusion 
 |            | Number of objects| Description                                                                          | 
-|:-----------|:----------------:|:-------------------------------------------------------------------------------------|
+|------------|------------------|--------------------------------------------------------------------------------------|
 |occluded    | 49593            | Objects that are obscured by other objects within the image                          |
 |not occluded| 94855            | Objects that appear completely without occlusion within the image                    |
 |total       | 144448           |                                                                                      |
@@ -136,7 +136,7 @@ key 'p' '<-'  : prev frame
 
 ### Truncation
 |             | Number of objects| Description                                                                          | 
-|:------------|:----------------:|:-------------------------------------------------------------------------------------|
+|-------------|------------------|--------------------------------------------------------------------------------------|
 |truncated    | 10487            | Objects whose part is out of the image                                               |
 |not truncated| 133961           | Objects that appear completely without truncation within the image                   |
 |total        | 144448           |                                                                                      |
