@@ -73,7 +73,7 @@ key 'p' '<-'  : prev frame
 
 ## Data Distribution
 
-### Data set 
+### Dataset 
 |     | Number of images | Description                              | 
 |-----|------------------|------------------------------------------|
 |train| 13500            | Dataset used during the learning process |
@@ -83,11 +83,11 @@ key 'p' '<-'  : prev frame
 
 
 ### Drone camera angle 
-|             | Number of images | Description                                                                            | 
-|-------------|------------------|----------------------------------------------------------------------------------------|
-|general view | 13500            | Dataset taken when the angle of the drone camera to the ground is between 10~60 degrees|
-|top view     | 4500             | Dataset taken when the angle of the drone camera to the ground is around 90 degrees    |
-|total        | 18000            |                                                                                        |
+|        | Number of images | Description                                                                            | 
+|--------|------------------|----------------------------------------------------------------------------------------|
+|general | 13500            | Dataset taken when the angle of the drone camera to the ground is between 10~60 degrees|
+|top     | 4500             | Dataset taken when the angle of the drone camera to the ground is around 90 degrees    |
+|total   | 18000            |                                                                                        |
 
 
 ### Weather
