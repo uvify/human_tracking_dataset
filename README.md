@@ -57,9 +57,9 @@
 </pre>
 
 
-## Tools
 
-### Visualizer
+
+## Visualizer
 
 ``` ruby
  python3 visualize_data.py --dir=[root_dir_path] --type=[train or test] --seq=[sequence number( 450 <= test < 500 ,  0 <= train < 450)]
@@ -73,48 +73,80 @@ key 'p' '<-'  : prev frame
 
 ## Data Distribution
 
-|type  |total |  train  |  test |
-|:-----|:------:|:------:|------:|
-|# img |18000   |13500   | 4500  |
+### Dataset 
+|     | Number of images | Description                              | 
+|-----|------------------|------------------------------------------|
+|train| 13,500            | Dataset used during the learning process |
+|test | 4,500             | Dataset used only to assess performance  |
+|total| 18,000            |                                          |
 
-|degree |total |  general  | top view |
-|:-----|:------:|:------:|------:|
-|# img  |18000 |14370   |3630   |
 
-|weather |total | sunny  | cloudy |
-|:-----|:------:|:------:|------:|
-|# img |18000 |10320   |7680   |
 
-|space |total | general  | green | play |
-|:-----|:------:|:------:|------:| ------:|
-|# img |18000|10320   |7680   |  2100  |
+### Drone camera angle 
+|        | Number of images | Description                                                                            | 
+|--------|------------------|----------------------------------------------------------------------------------------|
+|general | 14,370            | Dataset taken when the angle of the drone camera to the ground is between 10~60 degrees|
+|top     | 3,630             | Dataset taken when the angle of the drone camera to the ground is around 90 degrees    |
+|total   | 18,000            |                                                                                        |
 
-<p align='center'>
+
+### Weather
+|        | Number of images | Description                                 | 
+|--------|------------------|---------------------------------------------|
+|sunny   | 10,320            | Dataset taken on a sunny day                |
+|cloudy  | 7,680             | Dataset taken on a rainy or cloudy day      |
+|total   | 18,000            |                                             |
+
+### Filming location
+|                | Number of images | Description                                                                         | 
+|----------------|------------------|-------------------------------------------------------------------------------------|
+|general         | 9,000            | Dataset taken from common roads such as side walk and asphalt                       |
+|green           | 6,900             | Dataset taken in natural environments                                               |
+|play ground     | 2,100            | Dataset taken from outdoor sports venues such as tennis courts and basketball courts|
+|total           | 18,000            |                                                                                     |
+
+
+
+<!-- <p align='center'>
     <img src="./config/doc/data_ratio.png" alt="drawing" width= "200"/>
     <img src="./config/doc/degree.png" alt="drawing" width= "200"/>
     <img src="./config/doc/weather_ratio.png" alt="drawing" width= "200"/>
     <img src="./config/doc/space_ratio.png" alt="drawing" width= "200"/>    
-</p>
+</p> -->
 
 ## Class Distribution
-|      | total  |  general-pose | sitting  | waving hand|
-|:-----|:------:|------:|------:|------:|
-|# obj    | 144448  | 134413  | 9535|500|
 
-|      | total | occluded  | not occluded |
-|:-----|:------:| :------:|------:|
-|# obj    | 144448 |49593   | 94855|
-
-|      | total | truncated  | not truncated |
-|:-----|:------:| :------:|------:|
-|# obj | 144448 | 10487   | 133961|
+### Human pose class
+|           | Number of objects| Description                                                                           | 
+|-----------|------------------|---------------------------------------------------------------------------------------|
+|general    | 134,328           | Objects(people) with comman posture, such as walking or standing                      |
+|sitting    | 9,598             | Objects(people) with sitting posutre                                                  |
+|waving hand| 542              | Object(people) waving hands                                                           |
+|total      | 144,468           |                                                                                       |
 
 
-<p align='center'>
+### Occlusion 
+|            | Number of objects| Description                                                                          | 
+|------------|------------------|--------------------------------------------------------------------------------------|
+|occluded    | 49,258            | Objects that are obscured by other objects within the image                          |
+|not occluded| 95,210            | Objects that appear completely without occlusion within the image                    |
+|total       | 144,468           |                                                                                      |
+
+
+
+### Truncation
+|             | Number of objects| Description                                                                          | 
+|-------------|------------------|--------------------------------------------------------------------------------------|
+|truncated    | 10,508            | Objects whose part is out of the image                                               |
+|not truncated| 133,960           | Objects that appear completely without truncation within the image                   |
+|total        | 144,468           |                                                                                      |
+
+
+<!-- <p align='center'>
     <img src="./config/doc/pose_distribution.png" alt="drawing" width= "250"/>
     <img src="./config/doc/occlusion.png" alt="drawing" width = "250"/>
     <img src="./config/doc/truncation.png" alt="drawing" width= "250"/>
-</p>
+</p> -->
 
 
 ## Data Example
