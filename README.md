@@ -57,9 +57,9 @@
 </pre>
 
 
-## Tools
 
-### Visualizer
+
+## Visualizer
 
 ``` ruby
  python3 visualize_data.py --dir=[root_dir_path] --type=[train or test] --seq=[sequence number( 450 <= test < 500 ,  0 <= train < 450)]
@@ -116,7 +116,7 @@ key 'p' '<-'  : prev frame
 
 ## Class Distribution
 
-### Human pose class-
+### Human pose class
 |           | Number of objects| Description                                                                           | 
 |-----------|------------------|---------------------------------------------------------------------------------------|
 |general    | 134,328           | Objects(people) with comman posture, such as walking or standing                      |
