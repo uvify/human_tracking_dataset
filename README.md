@@ -76,34 +76,34 @@ key 'p' '<-'  : prev frame
 ### Dataset 
 |     | Number of images | Description                              | 
 |-----|------------------|------------------------------------------|
-|train| 13500            | Dataset used during the learning process |
-|test | 4500             | Dataset used only to assess performance  |
-|total| 18000            |                                          |
+|train| 13,500            | Dataset used during the learning process |
+|test | 4,500             | Dataset used only to assess performance  |
+|total| 18,000            |                                          |
 
 
 
 ### Drone camera angle 
 |        | Number of images | Description                                                                            | 
 |--------|------------------|----------------------------------------------------------------------------------------|
-|general | 13500            | Dataset taken when the angle of the drone camera to the ground is between 10~60 degrees|
-|top     | 4500             | Dataset taken when the angle of the drone camera to the ground is around 90 degrees    |
-|total   | 18000            |                                                                                        |
+|general | 14,370            | Dataset taken when the angle of the drone camera to the ground is between 10~60 degrees|
+|top     | 3,630             | Dataset taken when the angle of the drone camera to the ground is around 90 degrees    |
+|total   | 18,000            |                                                                                        |
 
 
 ### Weather
 |        | Number of images | Description                                 | 
 |--------|------------------|---------------------------------------------|
-|sunny   | 10320            | Dataset taken on a sunny day                |
-|cloudy  | 7680             | Dataset taken on a rainy or cloudy day      |
-|total   | 18000            |                                             |
+|sunny   | 10,320            | Dataset taken on a sunny day                |
+|cloudy  | 7,680             | Dataset taken on a rainy or cloudy day      |
+|total   | 18,000            |                                             |
 
 ### Filming location
 |                | Number of images | Description                                                                         | 
 |----------------|------------------|-------------------------------------------------------------------------------------|
-|general         | 10320            | Dataset taken from common roads such as side walk and asphalt                       |
-|green           | 7680             | Dataset taken in natural environments                                               |
-|play ground     | 18000            | Dataset taken from outdoor sports venues such as tennis courts and basketball courts|
-|total           | 18000            |                                                                                     |
+|general         | 9,000            | Dataset taken from common roads such as side walk and asphalt                       |
+|green           | 6,900             | Dataset taken in natural environments                                               |
+|play ground     | 2,100            | Dataset taken from outdoor sports venues such as tennis courts and basketball courts|
+|total           | 18,000            |                                                                                     |
 
 
 
@@ -119,27 +119,27 @@ key 'p' '<-'  : prev frame
 ### Human pose class
 |           | Number of objects| Description                                                                           | 
 |-----------|------------------|---------------------------------------------------------------------------------------|
-|general    | 134413           | Objects(people) with comman posture, such as walking or standing                      |
-|sitting    | 9535             | Objects(people) with sitting posutre                                                  |
-|waving hand| 500              | Object(people) waving hands                                                           |
-|total      | 144448           |                                                                                       |
+|general    | 134,328           | Objects(people) with comman posture, such as walking or standing                      |
+|sitting    | 9598             | Objects(people) with sitting posutre                                                  |
+|waving hand| 542              | Object(people) waving hands                                                           |
+|total      | 144,468           |                                                                                       |
 
 
 ### Occlusion 
 |            | Number of objects| Description                                                                          | 
 |------------|------------------|--------------------------------------------------------------------------------------|
-|occluded    | 49593            | Objects that are obscured by other objects within the image                          |
-|not occluded| 94855            | Objects that appear completely without occlusion within the image                    |
-|total       | 144448           |                                                                                      |
+|occluded    | 49,258            | Objects that are obscured by other objects within the image                          |
+|not occluded| 95,210            | Objects that appear completely without occlusion within the image                    |
+|total       | 144,468           |                                                                                      |
 
 
 
 ### Truncation
 |             | Number of objects| Description                                                                          | 
 |-------------|------------------|--------------------------------------------------------------------------------------|
-|truncated    | 10487            | Objects whose part is out of the image                                               |
-|not truncated| 133961           | Objects that appear completely without truncation within the image                   |
-|total        | 144448           |                                                                                      |
+|truncated    | 10,508            | Objects whose part is out of the image                                               |
+|not truncated| 133,960           | Objects that appear completely without truncation within the image                   |
+|total        | 144,468           |                                                                                      |
 
 
 <!-- <p align='center'>
