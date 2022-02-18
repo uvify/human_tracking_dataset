@@ -116,11 +116,11 @@ key 'p' '<-'  : prev frame
 
 ## Class Distribution
 
-### Human pose class
+### Human pose class-
 |           | Number of objects| Description                                                                           | 
 |-----------|------------------|---------------------------------------------------------------------------------------|
 |general    | 134,328           | Objects(people) with comman posture, such as walking or standing                      |
-|sitting    | 9598             | Objects(people) with sitting posutre                                                  |
+|sitting    | 9,598             | Objects(people) with sitting posutre                                                  |
 |waving hand| 542              | Object(people) waving hands                                                           |
 |total      | 144,468           |                                                                                       |
 
